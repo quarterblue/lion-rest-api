@@ -10,6 +10,11 @@ const clubsRouter = express.Router();
 clubsRouter.get('/', httpGetAllClubs);
 clubsRouter.get('/:id', httpGetSingleClub);
 
-// teamsRouter.get('/', () => ):
+// clubsRouter.get(/:id/stats, http);
+// clubsRouter.get(/:id/stats/:yearId, http);
+// clubsRouter.get(/:id/results, http);
+// clubsRouter.get(/:id/results/:yearId, http);
+// clubsRouter.get(/:id/players, http);
+// clubsRouter.get(/:id/players/:playerId, http);
 
 module.exports = clubsRouter;
