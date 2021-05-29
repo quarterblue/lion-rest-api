@@ -1,13 +1,15 @@
-const express = require('express');
+const http = require('http');
+
+const app = require('./app');
 
 const PORT = process.env.PORT || 9001;
 
-const server = express();
+const server = http.createServer(app);
 
-server.get('/', (req, res) => {
-  res.send('Welcome to EPL Rest API');
-});
+async function startServer() {
+  server.listen(PORT, () => {
+    console.log(`[server]: http://localhost:${PORT}`);
+  });
+}
 
-server.listen(PORT, () => {
-  console.log(`[server]: http://localhost:${PORT}`);
-});
+startServer();

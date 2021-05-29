@@ -9,6 +9,16 @@ const clubs = [
   'Arsenal',
   'Leeds United',
   'Everton',
+  'Aston Villa',
+  'Newcastle',
+  'Wolves',
+  'Crystal Palace',
+  'Southampton',
+  'Brighton',
+  'Burnley',
+  'Fulham',
+  'West Brom',
+  'Sheffield United',
 ];
 
 module.exports = clubs;
