@@ -44,4 +44,19 @@ Then navigate to **[http://localhost:9001/](http://localhost:9001/)** on your br
 
 ## File Structure
 
+```
+lion-rest-api
+├───.github
+│   ├───ISSUE_TEMPLATE
+│   └───workflows
+├───backend
+│   ├───config
+│   ├───controllers
+│   ├───helpers
+│   ├───models
+│   └───routes
+└───frontend
+```
+
+
 ## Documentation
