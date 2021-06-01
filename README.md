@@ -1,5 +1,4 @@
 <h1 align="center">
-  <br>
   <img width=40% src="https://github.com/quarterblue/lion-rest-api/blob/main/images/epl_logo.jpg" alt="timeline">
   <br>
   Lion REST API
