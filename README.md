@@ -1,9 +1,39 @@
 # Lion REST API
 
 ## About
-English Premier League Unofficial REST API
+English Premier League Unofficial REST API.
 
-## Features
+All data gathered from English Premier League website.
+
+## Resource Routes
+### Clubs
+
+Method | Endpoints | Auth | Description
+--- | --- | --- | ---
+`GET` | /api/v1/clubs | No | Retrieve all 20 clubs in current season of English Premier League (EPL).
+`GET` | /api/v1/clubs/:id | No | Retrieve single club in the current season of EPL by id.
+`GET` | /api/v1/clubs/:id/stats | No | Retrieve statistics of the current season of the current [id] EPL club.
+`GET` | /api/v1/clubs/:id/stats/:year | No | Retrieve statistics of the [year] season of the current [id] EPL club.
+`GET` | /api/v1/clubs/:id/results | No | Retrieve match results of the current season of the current [id] EPL club.
+`GET` | /api/v1/clubs/:id/results/:year | No | Retrieve match results of the [year] season of the current [id] EPL club.
+`GET` | /api/v1/clubs/:id/players | No | Retrieve all players registered for the [id] club in the current season.
+`GET` | /api/v1/clubs/:id/players/:playerId | No | Retrieve single player identified by [playerId] playing for the [id] club.
+
+### Players
+
+Method | Endpoints | Auth | Description
+--- | --- | --- | ---
+`GET` | /api/v1/players | No | Retrieve all players playing in the EPL in the current season.
+`GET` | /api/v1/players/:playerId | No | Retrieve single player playing in the EPL in the current season identified by [playerId].
+`GET` | /api/v1/players/:playerId/stats | No | Retrieve statistics of single player playing in the EPL in the current season identified by [playerId].
+
+### Tables
+
+Method | Endpoints | Auth | Description
+--- | --- | --- | ---
+`GET` | /api/v1/tables | No | Retrieve up to date competition table of the current season.
+`GET` | /api/v1/tables/:yearId | No | Retrieve up to date competition table of the [yearId] season.
+
 
 ## Getting Started
 
