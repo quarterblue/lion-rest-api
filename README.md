@@ -1,9 +1,10 @@
-# Lion REST API
+<h1 align="center">
+  <br>
+  <img width=100% src="https://github.com/quarterblue/lion-rest-api/blob/main/images/epl-rest.png" alt="timeline">
+  Lion REST API
+</h1>
 
-## About
-English Premier League Unofficial REST API.
-
-All data gathered from English Premier League website.
+<h4 align="center">English Premier League Unofficial RESTful API.</h4>
 
 ## Resource Routes
 ### Clubs
@@ -90,3 +91,5 @@ lion-rest-api
 
 
 ## Documentation
+
+## License
