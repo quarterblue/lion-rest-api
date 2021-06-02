@@ -1,5 +1,5 @@
 const clubs = require('../../data/example');
-const options = require('../helpers/options');
+// const options = require('../helpers/options');
 
 function httpGetAllClubs(req, res) {
   console.log(clubs);

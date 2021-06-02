@@ -1,5 +1,5 @@
 // Clubs Model
-const mongoose = rquire('mongoose');
+const mongoose = require('mongoose');
 
 const clubSchema = new mongoose.Schema({
   id: Number,
