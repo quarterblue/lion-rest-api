@@ -1,20 +1,40 @@
 require('dotenv').config();
 
 const Club = require('../models/clubs.model');
+const ClubStats = require('../models/stats.model');
 const db = require('../helpers/db');
 
-const { clubs } = require('../clubs.examples');
+const { clubs, statsOverall } = require('../clubs.examples');
 
-async function hello() {
-  await db.connectDb();
+async function loadClubs() {
   for (let club of clubs) {
     const cluby = new Club(club);
     try {
-      const savedClub = await cluby.save();
+      await cluby.save();
     } catch (err) {
       console.log(err);
     }
   }
 }
 
-hello();
+async function loadClubStats() {
+  for (let stats of statsOverall) {
+    const staty = new ClubStats(stats);
+    try {
+      await staty.save();
+    } catch (err) {
+      console.log(err);
+    }
+  }
+}
+
+async function loadClubResults() {}
+
+async function init() {
+  await db.connectDb();
+  // loadClubs();
+  loadClubStats();
+  // loadClubResults();
+}
+
+init();

@@ -1,14 +1,14 @@
 const express = require('express');
 
 const {
-  httpGetAllClubs,
-  httpGetSingleClub,
+  getAllClubs,
+  getSingleClub,
 } = require('../controllers/clubs.controller');
 
 const clubsRouter = express.Router();
 
-clubsRouter.get('/', httpGetAllClubs);
-clubsRouter.get('/:id', httpGetSingleClub);
+clubsRouter.get('/', getAllClubs);
+clubsRouter.get('/:id', getSingleClub);
 
 // clubsRouter.get(/:id/stats, http);
 // clubsRouter.get(/:id/stats/:yearId, http);
